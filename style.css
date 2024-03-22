@@ -52,33 +52,48 @@ body {
     background-size: cover;
     height: 45vh;
     margin: 50px auto;
-    border-radius: 5px;
+    border-radius: 2%;
+    box-shadow: 2px 2px 2px white,2px 2px 4px white,2px 2px 6px white;
 }
 
-.wrapper h2 {
+
+.info h2 {
     padding: 5px 0;
     text-align: center;
     background-color: #00CED1;
     color: black;
 }
 
-.wrapper p {
+.info p {
     margin: 20px 50px;
     margin-right: 20px;
     text-align: left;
     color: white;
     font-size: 23px;
 }
+.info i {
+    color: #6699CC;
+}
+.info h3 {
+    color: black;
+}
+.info i span {
+    color: aqua;
+}
 
-.wrapper h2 span {
+
+.info h2 span {
     font-size: 26px;
     color: #9beefb;
 }
 
-.wrapper p span {
+.info p span {
     color: black;
     font-size: 25px;
     text-transform: capitalize;
+}
+.info h3 span {
+    color: black;
 }
 
 /* Media query for smaller screens */
@@ -103,3 +118,20 @@ body {
         margin: 20px auto; /* Adjusted margin for smaller screens */
     }
 }
+
+@media screen and (max-width:500px){
+    .wrapper {
+        margin: 0 2rem; /* Adjusted margin for smaller screens */
+    }
+
+
+/* Default styles for .info */
+.info {
+    height: 100px;
+    margin: 50px auto;
+    border-radius: 2px;
+    background: transparent; 
+    backdrop-filter: blur(1px);
+}
+}
+
