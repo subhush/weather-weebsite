@@ -8,7 +8,9 @@ body {
     background-image: url(img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
 }
+
 
 .container {
     width: 600px;
@@ -42,12 +44,12 @@ body {
 
 }
 
+/* Default styles for .wrapper */
 .wrapper {
     margin: 0 9rem;
     background-image: url(img/bg2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: rgb(172, 189, 221); */
     height: 45vh;
     margin: 50px auto;
     border-radius: 5px;
@@ -79,6 +81,14 @@ body {
     text-transform: capitalize;
 }
 
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        margin: 0 2rem; /* Adjusted margin for smaller screens */
+    }
+}
+
+/* Default styles for .info */
 .info {
     height: 45vh;
     margin: 50px auto;
@@ -87,3 +97,9 @@ body {
     backdrop-filter: blur(1px);
 }
 
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .info {
+        margin: 20px auto; /* Adjusted margin for smaller screens */
+    }
+}
